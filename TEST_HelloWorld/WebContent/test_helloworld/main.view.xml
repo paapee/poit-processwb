@@ -1,0 +1,100 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="test_helloworld.main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="HelloWorld12">
+		<content>
+            <ObjectHeader intro="" title="Workbench Status" icon="sap-icon://product" number="Control Record Status" numberUnit="" numberState="None" titleActive="false" backgroundDesign="Transparent" condensed="false" visible="true">
+                <attributes>
+                    <ObjectAttribute title="Payroll Area" text="JW - HR-J: Monthly" active="false" visible="true"/>
+                    <ObjectAttribute title="Payroll Period" text="01.01.2017 - 31.12.2017" active="false" visible="true"/>
+                </attributes>
+                <statuses>
+                    <ObjectStatus title="Payroll Period" text="01.2017" state="Success" icon="sap-icon://calendar" visible="true"/>
+                </statuses>
+                <markers/>
+            </ObjectHeader>
+            <IconTabBar id="IconTabMain" expandable="false" expanded="true" applyContentPadding="true" backgroundDesign="Solid" upperCase="false" visible="true" selectedKey="Tab1">
+<!--                 <items>
+                    <IconTabFilter key="Tab1" icon="sap-icon://hr-approval" iconColor="Neutral" text="Pre-payroll processing" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                        <content>
+                    		<Tree
+								id="TreeTab1"
+							 	items="{path: 'tab1>/' ,    parameters: { numberOfExpandedLevels: 1 }}"
+							 	mode="None"
+								includeItemInSelection="true">
+								<CustomTreeItem>
+									<FlexBox alignItems="Start" width="100%" >
+										<items class="sapUiResponsiveMargin" >
+											<Button icon="{tab1>ref}" enabled="{tab1>enabled}" press="handleButtonPress" class="sapUiSmallMarginEnd" />
+											<Text text="{tab1>text}" class="sapUiTinyMargin"/>
+										</items>
+									</FlexBox>
+								</CustomTreeItem>
+							</Tree>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter key="Tab2" icon="sap-icon://process" iconColor="Positive" text="Payroll Processing" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                        <content>
+                            <Tree
+								id="TreeTab2"
+							 	items="{path: 'tab2>/' ,    parameters: { numberOfExpandedLevels: 1 }}"
+							 	mode="SingleSelectLeft"
+								includeItemInSelection="true">
+							    <StandardTreeItem
+								    title="{tab2>text}"/>
+							</Tree>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter key="Tab3" icon="sap-icon://hr-approval" iconColor="Critical" text="Approval" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                        <content>
+                             <Tree
+								id="TreeTab3"
+							 	items="{path: 'tab3>/' ,    parameters: { numberOfExpandedLevels: 1 }}"
+							 	mode="SingleSelectLeft"
+								includeItemInSelection="true">
+							    <StandardTreeItem
+								    title="{tab3>text}"/>
+							</Tree>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter key="Tab4" icon="sap-icon://project-definition-triangle-2" iconColor="Default" text="Final Processing" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                        <content>
+                             <Tree
+								id="TreeTab4"
+							 	items="{path: 'tab4>/' ,    parameters: { numberOfExpandedLevels: 1 }}"
+							 	mode="SingleSelectLeft"
+								includeItemInSelection="true">
+							    <StandardTreeItem
+								    title="{tab4>text}"/>
+							</Tree>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter key="Tab5" icon="sap-icon://activities" iconColor="Default" text="Subsequent Activities" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                        <content>
+                            <Tree
+								id="TreeTab5"
+							 	items="{path: 'tab5>/' ,    parameters: { numberOfExpandedLevels: 1 }}"
+							 	mode="SingleSelectLeft"
+								includeItemInSelection="true">
+							    <StandardTreeItem
+								    title="{tab5>text}"/>
+							</Tree>
+                        </content>
+                    </IconTabFilter>
+                </items> -->
+                <items/>
+                <content/>
+            </IconTabBar>
+		</content>
+        <footer>
+            <Bar design="Auto">
+                <contentLeft>
+                    <Button text="Status Report" type="Emphasized" icon="sap-icon://pdf-attachment" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="openPDFViewer"/>
+                </contentLeft>
+                <contentMiddle/>
+                <contentRight>
+                    <Button text="Execute" type="Accept" icon="sap-icon://begin" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="onExecute"/>
+                </contentRight>
+            </Bar>
+        </footer>
+	</Page>
+</core:View>
